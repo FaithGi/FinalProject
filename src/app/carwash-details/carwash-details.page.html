@@ -1,0 +1,74 @@
+<ion-header class="ion-no-border">
+
+	<ion-item lines="none">
+
+		<ion-buttons slot="start">
+
+		<ion-back-button defaultHref="/"></ion-back-button>
+		
+		</ion-buttons>
+
+
+	</ion-item>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid class="ion-padding left ion-padding-right">
+    <ion-row>
+      <ion-col size="12">
+            <ion-card class="card">
+              <ion-card-header class="ion-text-center">
+                Carwash Name
+              </ion-card-header>
+              <ion-card-content class="ion-text-left">
+
+                <ion-slides [options]="options">
+                  <ion-slide *ngFor="let pop of [1, 2, 3]">
+                    <ion-card class="card">
+                      <ion-card-content>
+        
+                        <div class="img-wrapper">
+                          <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vkyzV1mhYHtkEd-u7aql50Ud6cER6kUCbQ&usqp=CAU"></ion-img>
+                        </div>
+                        
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-slide>
+                </ion-slides>
+                
+                <ion-grid>
+                  <!-- <ion-row>
+                    <ion-col size="9">
+                      Amount:
+                    </ion-col>
+                    <ion-col size="3">
+                      R 4500
+                    </ion-col>
+                  </ion-row> -->
+                  <!-- <ion-row>
+                    <ion-col size="6">
+                      Date:
+                    </ion-col>
+                    <ion-col size="6">
+                      17 February 2020
+                    </ion-col>
+                  </ion-row> -->
+                  <ion-row>
+                    <ion-col size="6">
+                      Location:
+                    </ion-col>
+                    <ion-col size="6">
+                      44 Central Road, Midrand,1685, South africa
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+                <ion-button size="small" expand="block" color="danger">Book Slot</ion-button>
+              </ion-card-content>
+            </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

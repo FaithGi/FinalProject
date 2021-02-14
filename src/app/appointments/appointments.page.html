@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+      
+      <ion-tab-button tab="back">
+        <ion-icon name="arrow-back" [routerLink]="['/apartment']"></ion-icon>
+      </ion-tab-button>
+    </ion-buttons> -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-buttons slot="end">
+      <ion-tab-button tab="menu">
+        <ion-icon name="menu"></ion-icon>
+      </ion-tab-button> 
+
+    </ion-buttons> -->
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-grid>
+
+<div>
+  
+  <form>
+    <label>
+     <input type="text" class="input" name="name" placeholder="Name"/>
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+    </label>
+
+    <label>
+     <input type="text" class="input" name="surname" placeholder="Surname "/>
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+    </label>
+
+    <label>
+     <input type="number" class="input" name="Identity Number" placeholder="Identity Number"/>
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+
+    <label>
+    <input type="date"  id="date" name="date" >
+    <div class="box-line"></div>
+      <div class="box"></div>
+    
+  </label>
+
+  <ion-button size="small" expand="block" color="danger" [routerLink] ="['/appointments']">Set Appointment</ion-button>
+  </form>
+</div>
+</ion-grid>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home"></ion-icon>
+        </ion-tab-button>
+    
+    
+        <ion-tab-button tab="settings">
+          <ion-icon name="settings"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
