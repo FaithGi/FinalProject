@@ -1,0 +1,99 @@
+<div class="wrapper">
+  <div class="header">
+    <ion-toolbar>
+
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        SERVICES
+      </ion-title>
+
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </div>
+
+  <!-- <div class="seachbar">
+    <ion-input clearInput type="text" placeholder="Search ">
+      <ion-icon style="color: black; margin-left: 5px;" class="ion-padding-left" slot="start" name="search-outline">
+      </ion-icon>
+    </ion-input>
+
+  </div>
+   -->
+  <br>
+<ion-app>
+  <ion-content>
+  <ion-item-divider class="ion-padding">
+    <ion-label>
+      popular
+    </ion-label>
+    <ion-label slot="end">
+      <a>View all</a>
+    </ion-label> 
+  </ion-item-divider>
+
+
+  <ion-card>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJAyHT6NLPIsVMWVX5qw09b1-ZOaVhdNZ4BA&usqp=CAU" width="100%" [routerLink] ="['/cleaning-details']"/>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title >Window Cleaning</ion-card-title>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://cdn.kinsights.com/cache/63/a0/63a03d562fa5d9d209ef628429461886.jpg" />
+  
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>Full House Cleaning</ion-card-title>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://www.chelseacleaning.co.za/wp-content/uploads/2020/10/how-long-do-carpets-take-to-dry-600x450.jpg" />
+    <ion-card-header>
+      <ion-card-title>Carpet cleaning</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://i.ytimg.com/vi/R2Y6vz8J8FE/mqdefault.jpg" width="100%"/>
+    <ion-card-header>
+      
+      <ion-card-title>Ceiling cleaning</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+  
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="data:image/jpeg;base64,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" width="100%" />
+    <ion-card-header>
+      
+      <ion-card-title>Couch Cleaning</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+    -->
+    </ion-card-content>
+  </ion-card>
+  </ion-content>
+</ion-app>
+</div>
+
+
